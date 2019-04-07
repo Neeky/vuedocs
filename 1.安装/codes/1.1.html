@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <title>直接引入vue的js文件</title>
+        <!-- 开发版没有经过压缩 -->
+        <!-- https://vuejs.org/js/vue.js--><script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+
+    <body>
+        <div id="app">
+            {{ message }}
+        </div>
+        
+        <script>
+            
+            var app = new Vue({
+              el: '#app', // 直接通过 el 来查询到要元素
+              data: {
+                message: 'Hello Vue!'
+              }
+            })     
+        </script>
+    </body>
+
+</html>
